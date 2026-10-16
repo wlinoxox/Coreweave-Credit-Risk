@@ -2,6 +2,7 @@
 import sys
 from pptx import Presentation
 from pptx.util import Pt, Emu
+from pptx.enum.chart import XL_TICK_LABEL_POSITION
 
 
 def text_width(s):
@@ -14,7 +15,11 @@ def polish(path):
     for slide in prs.slides:
         for shape in slide.shapes:
             if shape.has_chart:
-                shape.chart.has_title = False
+                chart = shape.chart
+                chart.has_title = False
+                # keep category labels below the plot when bars go negative
+                if any(v is not None and v < 0 for s in chart.plots[0].series for v in s.values):
+                    chart.category_axis.tick_label_position = XL_TICK_LABEL_POSITION.LOW
             if not shape.has_table:
                 continue
             tbl = shape.table
