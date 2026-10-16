@@ -1,12 +1,14 @@
 # CoreWeave (CRWV) 信用風險評估
 
-2026/10/16 一次性報告：評估 CoreWeave 在債券與 CDS 急跌後的信用風險。
+2026/10/16 一次性報告：評估 CoreWeave 在債券與 CDS 急跌後的信用風險，重點為債務結構、發債量與融資需求。
 
 | 路徑 | 內容 |
 |---|---|
-| `deck/CoreWeave信用風險評估_20261016.pptx` | 簡報（凱基範本） |
+| `deck/CoreWeave債務與融資需求_20261016.pptx` | 主簡報：債務結構、發債量、融資缺口（凱基範本） |
+| `reports/2026-10-16_CoreWeave債務與融資需求.md` | 債務分析文字版，含估算假設與資料來源 |
+| `deck/CoreWeave信用風險評估_20261016.pptx` | 整體信用風險總覽簡報 |
 | `reports/2026-10-16_CoreWeave信用風險評估.md` | 完整文字報告與資料來源 |
 | `framework.md` | 七大風險面向與燈號門檻 |
-| `deck/spec.json`、`deck/polish.py` | 簡報內容規格與表格排版後處理；改內容後可重新產生 |
+| `deck/spec_debt.json`、`deck/spec.json`、`deck/polish.py` | 簡報內容規格與表格排版後處理；改內容後可重新產生 |
 
 數字來自 2026/10/14–15 的媒體報導與 SEC 申報，部分來源互相矛盾，送出前請以 Bloomberg 終端機核對 CDS、債券報價與評等。

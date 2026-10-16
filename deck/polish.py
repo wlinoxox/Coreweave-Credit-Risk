@@ -24,9 +24,11 @@ def polish(path):
             total = shape.width
             for c, w in enumerate(weights):
                 tbl.columns[c].width = Emu(int(total * w / sum(weights)))
-            body_pt = 14 if ncols > 2 else 15
+            dense = len(tbl.rows) > 8
+            body_pt = 12 if dense else 13 if ncols > 5 else 14 if ncols > 2 else 15
+            row_pt = 28 if dense else 34
             for r, row in enumerate(tbl.rows):
-                row.height = Pt(34)
+                row.height = Pt(row_pt)
                 for cell in row.cells:
                     cell.vertical_anchor = 3  # middle
                     for p in cell.text_frame.paragraphs:
