@@ -1,0 +1,3 @@
+week_ending,cds_5y_bp,bond_2031_9pct_price,bond_2031_9pct_ytm_pct,implied_5y_default_prob_pct,stock_close_usd,sp_rating,moodys_rating,total_debt_principal_busd,cash_busd,total_liquidity_busd,backlog_busd,notes
+2026-10-09,643,,,41,,,,,,,,CDS from 368bp on 10/6 to 643bp by week end
+2026-10-16,1194.5,79.9,15.6,63,,B+ (unverified),Ba3 (unverified),35.6,5.5,15.6,104.2,"CDS = 10/15 intraday record (ICE); bond = TRACE 10/14; stock closed $65.78 on 10/14, +5.94% on 10/15 (verify close); balance sheet as of 6/30"
