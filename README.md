@@ -1,24 +1,12 @@
-# CoreWeave (CRWV) 信用風險週報
+# CoreWeave (CRWV) 信用風險評估
 
-每週追蹤 CoreWeave 的信用與營運風險，產出給主管的週報。
-
-## 結構
+2026/10/16 一次性報告：評估 CoreWeave 在債券與 CDS 急跌後的信用風險。
 
 | 路徑 | 內容 |
 |---|---|
-| `framework.md` | 風險框架：七大風險面向、追蹤指標、燈號門檻 |
-| `data/kpi_tracker.csv` | 每週關鍵指標（CDS、債券價格、股價、評等…），一週一列 |
-| `reports/YYYY-MM-DD_週報.md` | 每週報告 |
-| `templates/weekly_template.md` | 週報範本 |
+| `deck/CoreWeave信用風險評估_20261016.pptx` | 簡報（凱基範本） |
+| `reports/2026-10-16_CoreWeave信用風險評估.md` | 完整文字報告與資料來源 |
+| `framework.md` | 七大風險面向與燈號門檻 |
+| `deck/spec.json`、`deck/polish.py` | 簡報內容規格與表格排版後處理；改內容後可重新產生 |
 
-## 每週流程
-
-1. 更新 `data/kpi_tracker.csv`：新增本週一列（數據以週四收盤為準，Bloomberg / ICE / TRACE 為優先來源）。
-2. 依 `framework.md` 的門檻重新評定各面向燈號，與上週比較。
-3. 複製 `templates/weekly_template.md` 為 `reports/<日期>_週報.md`，先寫「一頁摘要」，再寫細節。
-4. 列出下週觀察事件（財報、評等動作、新發債、大客戶消息）。
-
-## 資料來源原則
-
-- 財務數字以 SEC 申報（10-Q / 10-K / 8-K）為準；媒體數字若互相矛盾，報告中須註明。
-- 市場數據（CDS、債券價格）以終端機報價核對後再送出。
+數字來自 2026/10/14–15 的媒體報導與 SEC 申報，部分來源互相矛盾，送出前請以 Bloomberg 終端機核對 CDS、債券報價與評等。
